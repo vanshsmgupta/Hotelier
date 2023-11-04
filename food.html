@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Your head content -->
+    <link rel="stylesheet" type="text/css" href="food.css">
+  </head>
+  <body>
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Explore Our Delicious Menu</h1>
+          <p>Indulge in a culinary delight with our food and beverages offerings.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="food-and-beverages__container">
+      <h2 class="section__header">Our Menu</h2>
+      <div class="food-items">
+        <div class="back-to-main">
+            <a href="index.html">Back to Main Page</a>
+          </div>
+        <!-- Create four cards that open the same PDF file when clicked -->
+        <div class="food-item pdf-card" onclick="openPDF('path/to/your-menu.pdf')">
+          <img src="assets/header.jpg" alt="Menu PDF Icon">
+          <h3>View Our Menu (PDF)</h3>
+          <p>Click to open our full menu in PDF format.</p>
+        </div>
+        <div class="food-item pdf-card" onclick="openPDF('path/to/your-menu.pdf')">
+          <img src="assets/hotel-1.jpg" alt="Menu PDF Icon">
+          <h3>View Our Menu (PDF)</h3>
+          <p>Click to open our full menu in PDF format.</p>
+        </div>
+        <div class="food-item pdf-card" onclick="openPDF('path/to/your-menu.pdf')">
+          <img src="assets/hotel-3.jpg" alt="Menu PDF Icon">
+          <h3>View Our Menu (PDF)</h3>
+          <p>Click to open our full menu in PDF format.</p>
+        </div>
+        <div class="food-item pdf-card" onclick="openPDF('path/to/your-menu.pdf')">
+          <img src="assets/hotel-6.jpg" alt="Menu PDF Icon">
+          <h3>View Our Menu (PDF)</h3>
+          <p>Click to open our full menu in PDF format.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <!-- Your footer content as in your original code -->
+      </div>
+    </footer>
+
+    <!-- JavaScript function to open the PDF when the card is clicked -->
+    <script>
+      function openPDF(pdfPath) {
+        window.open(pdfPath, '_blank');
+      }
+    </script>
+  </body>
+</html>
