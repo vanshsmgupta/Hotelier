@@ -351,15 +351,12 @@ nav {
   background-color: var(--text-light);
 }
 
-/* Your existing CSS for the navbar */
+
 .navbar:hover .nav__links {
   display: none;
 }
 
-/* Add this CSS for mobile responsiveness */
-/* Your existing CSS for the navbar */
 
-/* Add this CSS for mobile responsiveness */
 @media screen and (max-width: 768px) {
   .nav__links {
     display: none;
@@ -371,9 +368,9 @@ nav {
 
   .menu-icon {
     display: block;
-    position: absolute; /* Position the menu icon */
-    right: 20px; /* Adjust the right distance as needed */
-    top: 40px; /* Adjust the top distance as needed */
+    position: absolute; 
+    right: 20px; 
+    top: 40px; 
   }
 
   .menu-icon .bar {
@@ -384,7 +381,7 @@ nav {
   }
 }
 
-/* The rest of your CSS remains the same */
+
 
 
 @media screen and (max-width: 900px) {
