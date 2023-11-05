@@ -42,16 +42,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
+/* nav {
   max-width: var(--max-width);
   margin: auto;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
-.nav__logo {
+/* .nav__logo {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -62,7 +62,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 2rem;
-}
+} */
 
 .link a {
   font-weight: 500;
@@ -351,18 +351,18 @@ nav {
   background-color: var(--text-light);
 }
 
-.navbar:hover .nav__links {
+/* .navbar:hover .nav__links {
   display: none;
-}
+} */
 
 @media screen and (max-width: 768px) {
-  .nav__links {
+  /* .nav__links {
     display: none;
   }
 
   .navbar:hover .nav__links {
     display: block;
-  }
+  } */
 
   .menu-icon {
     display: block;
