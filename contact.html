@@ -11,6 +11,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"
       rel="stylesheet" />
     <link rel="stylesheet" href="contact.css" />
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("3MtCxsk8pXkjfusz5");
+      })();
+    </script>
     <title>Contact Us</title>
   </head>
   <body>
@@ -67,21 +75,23 @@
 
     <section class="contact-form">
       <h2>Send us a message</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button onclick="sendMail()">Submit</button>
     </section>
     <a class="back-to-main" href="index.html">Back to Main Page</a>
     <footer class="bg-gray-100 pt-5">
@@ -205,5 +215,6 @@
     </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
