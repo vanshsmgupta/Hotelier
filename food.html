@@ -83,20 +83,31 @@
           <p><b>Click to open our full menu in PDF format.</b></p>
         </a>
       </div>
-      <div class="food-item pdf-card" onclick="openPDF('assets/Sweets.pdf')">
-        <a href="assets/Sweets.pdf" target="_blank">
-          <img src="assets/laddoo.jpg" alt="Menu PDF Icon">
-          <h3>Indian Dessert Delights</h3>
-          <p><b>Click to open our full menu in PDF format.</b></p>
-        </a>
-      </div>
       <div class="food-item pdf-card" onclick="openPDF('assets/sumit.pdf')">
-        <a href="assets/sumit.pdf" target="_blank">
-          <img src="assets/potato.jpg" alt="Menu PDF Icon">
-          <h3>Savory Delightful Creations</h3>
-          <p><b>Click to open our full menu in PDF format.</b></p>
+        <img src="assets/potato.jpg" alt="Menu PDF Icon">
+        <h3>Savory Delightful Creations</h3>
+        <p><b>Click to open our full menu in PDF format.</b></p>
+    </div>
+    <script>
+    function openPDF(pdfUrl) {
+        // Use JavaScript to open the PDF in a new window or tab
+        window.open(pdfUrl, '_blank');
+    }
+    </script>
+
+      <div class="food-item pdf-card" onclick="openPDF('assets/sumit.pdf')">
+        <a href="assets/sumit.pdf" target="_blank" type="application/pdf">
+            <img src="assets/potato.jpg" alt="Menu PDF Icon">
+            <h3>Savory Delightful Creations</h3>
+            <p><b>Click to open our full menu in PDF format.</b></p>
         </a>
-      </div>
+    </div>
+    <script>
+      function openPDF(pdfUrl) {
+          // Use JavaScript to open the PDF in a new window or tab
+          window.open(pdfUrl, '_blank');
+      }
+      </script>
 
     </div>
   </section>
